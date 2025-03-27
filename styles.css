@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+nav {
+    background: #333;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.nav-right a {
+    color: #ffffff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-right {
+display: flex;
+align-items: center;
+margin-right: 40px; /* Reduce this value to move it left */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    flex-direction: column;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.home-text {
+    max-width: 50%;
+}
+.home-text h1 {
+    font-size: 48px;
+}
+.home-text p {
+    font-size: 20px;
+}
+.home-image img {
+    max-width: 300px;
+    border-radius: 50%;
+}
+.full-page {
+    height: 100vh;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.about-image img {
+    max-width: 400px;
+    border-radius: 10px;
+}
+.about-text {
+    max-width: 50%;
+    text-align: left;
+}
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills-column {
+    width: 48%;
+}
+.skill {
+    margin: 10px 0;
+}
+.skill p {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.skill-bar {
+    width: 100%;
+    background: #333;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.skill-fill {
+    height: 100%;
+    background: #4dabf7;
+    text-align: right;
+    line-height: 20px;
+    color: white;
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+.project-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.project-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+.project-text {
+    max-width: 50%;
+    text-align: left;
+}
+.cv-button {
+background-color: #ff6600;
+color: white;
+padding: 8px 15px;
+border-radius: 5px;
+text-decoration: none;
+font-weight: bold;
+}
+.cv-button:hover {
+background-color: #cc5500;
+}

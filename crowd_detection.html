@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowd Detection Using OpenCV</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background: #1e1e1e;
+            color: #ff7300;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 115, 0, 0.3);
+        }
+        h2 {
+            color: #ff7300;
+            border-bottom: 2px solid #ff7300;
+            padding-bottom: 5px;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 115, 0, 0.5);
+        }
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #ff7300;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background: #cc5c00;
+        }
+    </style>
+</head>
+<body>
+    <header>Crowd Detection Using OpenCV</header>
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>The <strong>Crowd Detection Using OpenCV</strong> project implements a detection system using YOLOv3 to identify crowds in video frames. The system logs crowd events and saves results for further analysis.</p>
+
+        <h3 style="color:yellowgreen">Key Features</h3>
+        <ul>
+            <li>Detects persons in video frames using YOLOv3.</li>
+            <li>Identifies crowd events based on predefined criteria.</li>
+            <li>Logs detected crowd events, including frame numbers and person count.</li>
+            <li>Saves results in a CSV file for analysis.</li>
+        </ul>
+
+        <h3 style="color: yellowgreen;">Workflow & Methodology</h3>
+        <ul>
+            <h4 style="color: burlywood;">Data Collection & Processing</h4>
+            <ul>
+                <li>Processes video frames using OpenCV.</li>
+                <li>Detects persons using YOLOv3.</li>
+            </ul>
+        </ul>
+        <ul>
+            <h4 style="color: burlywood;">Crowd Detection Criteria</h4>
+            <ul>
+                <li>A crowd event is detected if three or more persons stand close for 10 consecutive frames.</li>
+                <li>Logs frame numbers and crowd size in a CSV file.</li>
+            </ul>
+        </ul>
+        <ul>
+            <h4 style="color: burlywood;">Deployment & Usage</h4>
+            <ul>
+                <li>Requires YOLOv3 weights & config files.</li>
+                <li>Run `detection.py` to analyze a video file.</li>
+            </ul>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>OpenCV</li>
+            <li>YOLOv3</li>
+            <li>NumPy, Pandas</li>
+        </ul>
+        
+        <h2>Project Screenshots</h2>
+        <img src="https://github.com/user-attachments/assets/94599a90-95b5-4613-8188-850e1e9f10b8" alt="Crowd Detection Screenshot">
+        <img src="https://github.com/user-attachments/assets/fceb2312-5e17-4adf-a25c-ab194ee6ac03" alt="CSV Output Screenshot">
+        
+        <h2>Project Links</h2>
+        <div class="links">
+            <a href="https://github.com/Shashank0769/Crowd-Detection" target="_blank">GitHub Repository</a>
+        </div>
+    </div>
+</body>
+</html>

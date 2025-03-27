@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction using TensorFlow</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background: #1e1e1e;
+            color: #ff7300;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 115, 0, 0.3);
+        }
+        h2 {
+            color: #ff7300;
+            border-bottom: 2px solid #ff7300;
+            padding-bottom: 5px;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 5px 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 115, 0, 0.5);
+        }
+        .links {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #ff7300;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background: #cc5c00;
+        }
+    </style>
+</head>
+<body>
+    <header>Stock Prediction using TensorFlow</header>
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>The <strong>Stock Prediction using TensorFlow</strong> project is designed to predict the next day's stock price using a machine learning model. The system fetches real-time stock data, processes it, and utilizes a trained model to provide accurate stock price forecasts.</p>
+
+        <h3 style="color:yellowgreen">Key Features</h3>
+        <ul>
+            <li>Fetches real-time stock data from Yahoo Finance (`yfinance`).</li>
+            <li>Utilizes TensorFlow to train a predictive model.</li>
+            <li>Provides an interactive Streamlit UI for user input.</li>
+            <li>Predicts the next day's stock price dynamically.</li>
+        </ul>
+
+        <h3 style="color: yellowgreen;">Workflow & Methodology</h3>
+        <ul>
+            <h4 style="color: burlywood;">Data Collection & Preprocessing</h4>
+            <ul>
+                <li>Historical stock data is retrieved using the `yfinance` API.</li>
+                <li>Data is cleaned, missing values are handled, and features are engineered for training.</li>
+            </ul>
+        </ul>
+        <ul>
+            <h4 style="color: burlywood;">Model Training & Prediction</h4>
+            <ul>
+                <li>A simple TensorFlow model is trained to predict stock prices.</li>
+                <li>Performance is validated using error metrics such as RMSE.</li>
+            </ul>
+        </ul>
+        <ul>
+            <h4 style="color: burlywood;">Visualization & Insights</h4>
+            <ul>
+                <li>Predicted vs actual stock prices are displayed using interactive charts.</li>
+                <li>Users can analyze stock trends based on past data.</li>
+            </ul>
+        </ul>
+        <ul>
+            <h4 style="color: burlywood;">Deployment & Real-Time Predictions</h4>
+            <ul>
+                <li>The application is deployed using Streamlit Cloud, allowing easy access.</li>
+                <li>Users can enter a stock symbol, choose a date range, and predict the next day's price.</li>
+            </ul>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>yfinance</li>
+            <li>Pandas, NumPy</li>
+            <li>Streamlit (for deployment)</li>
+        </ul>
+        
+        <h2>Project Screenshots</h2>
+        <img src="https://github.com/user-attachments/assets/f8e56766-1025-4784-b990-8a600f6c7c0a" alt="Stock Prediction App Screenshot">
+        
+        <h2>Project Links</h2>
+        <div class="links">
+            <a href="https://github.com/Shashank0769/Stock-Price-Prediction-with-TensorFlow" target="_blank">GitHub Repository</a>
+            <a href="https://stock-price-prediction-with-tensorflow-eykzqesil2urt65k2xcami.streamlit.app/" target="_blank">Live Demo</a>
+        </div>
+    </div>
+</body>
+</html>
